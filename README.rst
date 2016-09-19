@@ -28,6 +28,8 @@ command, for example:
 -  Rainbow can also read from STDIN instead of providing a command:
    ::
 
+rainbow --red='ERROR.*' --green='INFO.*' --yellow='WARNING.*' --magenta='DEBUG.*' -- tail -f /var/log/ahenk.log
+
      tail -f /var/log/my.log | rainbow --red='.*ERROR.*'
 
 Using confs
