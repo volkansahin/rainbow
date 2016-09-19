@@ -15,6 +15,10 @@ Using patterns
 Just prepend ``rainbow`` with ``COLOR=PATTERN`` associations to your
 command, for example:
 
+   ::
+
+     rainbow --red='ERROR.*' --green='INFO.*' --yellow='WARNING.*' --magenta='DEBUG.*' -- tail -f /var/log/ahenk.log
+
 -  Tail some log file with lines containing ``ERROR`` in red:
    ::
 
@@ -27,8 +31,6 @@ command, for example:
 
 -  Rainbow can also read from STDIN instead of providing a command:
    ::
-
-rainbow --red='ERROR.*' --green='INFO.*' --yellow='WARNING.*' --magenta='DEBUG.*' -- tail -f /var/log/ahenk.log
 
      tail -f /var/log/my.log | rainbow --red='.*ERROR.*'
 
